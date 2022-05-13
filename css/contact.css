@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    cursor: none;
+    background-color: #000;
+    font-family: 'Raleway', sans-serif !important;
+}
+
+.cursor1 {
+    z-index: 999 !important;
+    position: fixed;
+    width: 16px;
+    height: 16px;
+    border: 1.9px solid #fff;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: 0s;
+    animation: example 0.6s ease infinite alternate forwards;
+}
+
+.cursor2 {
+    z-index: 999 !important;
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(226, 3, 3) !important;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: 0s;
+}
+
+@keyframes example {
+    from {
+        width: 16px;
+        height: 16px;
+    }
+    to {
+        width: 27px;
+        height: 27px;
+    }
+}
+
+.logo img {
+    position: fixed;
+    top: 2%;
+    width: 50px !important;
+    height: 70px !important;
+    z-index: 100;
+    left: 3%;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav {
+    z-index: 1000;
+}
+
+.nav__button {
+    z-index: 900;
+    position: fixed;
+    width: 50px;
+    height: 20px;
+    top: 40px;
+    right: 3%;
+}
+
+.nav__button:hover {
+    cursor: pointer;
+}
+
+.nav__button span {
+    width: 39px;
+    background: white;
+    height: 2px;
+    position: absolute;
+    border-radius: 100px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav__button span::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 2.5px;
+    background: white;
+    top: 7px;
+    left: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav__button span::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 2px;
+    background: white;
+    top: -7px;
+    left: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav__button-hover:hover>span {
+    width: 32px;
+}
+
+.nav__button-hover:hover>span::after {
+    width: 29px;
+}
+
+.nav__menu {
+    width: 100%;
+    height: 0;
+    position: fixed;
+    z-index: 899;
+    background: rgb(0 0 0 / 94%);
+    overflow: hidden;
+    -webkit-transition: all 0.8s cubic-bezier(0, 0, 0.2, 1);
+    transition: all 0.8s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.nav__menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    position: absolute;
+    left: 65%;
+    top: 20%;
+}
+
+.nav__menu__list a {
+    margin: 20px 0;
+}
+
+.expandNav {
+    height: 100vh;
+}
+
+.nav_button-animation span {
+    background: #fff;
+}
+
+.nav_button-animation span::after {
+    -webkit-transform: rotate(-50deg);
+    transform: rotate( -56deg);
+    background: #fff;
+    width: 18px;
+    left: 25px;
+}
+
+.nav_button-animation span::before {
+    -webkit-transform: rotate(50deg);
+    transform: rotate( 56deg);
+    background: #fff;
+    width: 18px;
+    left: 25px;
+}
+
+
+/*navbar media query  */
+
+@media (max-width:1024px) {
+    .nav__menu__list {
+        left: 58%;
+        top: 15%;
+    }
+}
+
+@media (max-width:770px) {
+    .nav__menu__list {
+        left: 52%;
+        top: 11%;
+    }
+}
+
+@media (max-width:680px) {
+    .nav__menu__list {
+        font-size: 40px;
+        left: 54%;
+        top: 11%;
+    }
+    .nav__menu__list a {
+        margin: 12px 0;
+    }
+}
+
+@media (max-width:600px) {
+    .nav__menu__list {
+        font-size: 40px;
+        left: 48%;
+        top: 12%;
+    }
+    .nav__menu__list a {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width:415px) {
+    .nav__menu__list {
+        font-size: 40px;
+        left: 32%;
+        top: 14%;
+    }
+    .nav__menu {
+        background: rgb(0 0 0 / 95%);
+    }
+}
+
+@media (max-width:376px) {
+    .nav__menu__list {
+        left: 28%;
+        top: 13%;
+    }
+}
+
+@media (max-width:330px) {
+    .nav__menu__list {
+        font-size: 34px;
+        left: 28%;
+        top: 15%;
+    }
+}
+
+
+/* end nav bar media query */
+
+#contact {
+    width: 100%;
+    height: 100% !important;
+    position: absolute;
+    background-color: #000;
+}
+
+.section-header {
+    text-align: center;
+    margin: 55px auto -30px auto;
+    padding: 40px 0;
+    font: 300 60px 'Oswald', sans-serif;
+    letter-spacing: 6px;
+    color: #fff;
+}
+
+.contact-wrapper {
+    margin: 0 auto;
+    padding-top: 20px;
+    position: relative;
+    max-width: 850px;
+}
+
+
+/* Begin Left Contact Page */
+
+.form-horizontal {
+    float: left;
+    max-width: 400px;
+    /* font-family: 'Lato'; */
+    font-weight: 400;
+}
+
+.form-control,
+textarea {
+    width: 385px;
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.form-control {
+    display: block;
+    width: 92%;
+    height: 34px;
+    padding: 6px 15px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+textarea {
+    height: 100% !important;
+}
+
+.send-button {
+    margin-top: 15px;
+    height: 34px;
+    width: 400px;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+    background-color: #337ab7;
+    color: white;
+    border-radius: 4px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.button {
+    height: 26px;
+    transition: all .2s ease-in-out;
+}
+
+.send-text {
+    color: white;
+    display: block;
+    margin-top: 8.5px;
+    font: 700 12px 'Lato', sans-serif;
+    letter-spacing: 2px;
+}
+
+
+/* Begin Right Contact Page */
+
+.direct-contact-container {
+    max-width: 400px;
+    float: right;
+    margin-top: 5px;
+}
+
+.contact-list {
+    list-style-type: none;
+    margin-left: -65px;
+    padding-right: 10px;
+}
+
+.list-item {
+    line-height: 4;
+    color: #aaa;
+}
+
+.contact-text {
+    font: 300 18px 'Lato', sans-serif;
+    letter-spacing: 1.9px;
+    color: #bbb;
+}
+
+.place {
+    margin-left: 62px;
+}
+
+.phone {
+    margin-left: 56px;
+}
+
+.gmail {
+    margin-left: 53px;
+}
+
+.contact-text a {
+    color: #bbb;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+.contact-text a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Social Media Icons */
+
+.social-media-list {
+    position: relative;
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.social-media-list li a {
+    color: #fff;
+}
+
+.social-media-list li {
+    position: relative;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 10px 3px;
+    line-height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgb(27, 27, 27);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.social-media-list li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 0 1px #fff;
+    transition: all .2s ease-in-out;
+}
+
+.social-media-list li:hover {
+    background-color: #fff;
+}
+
+.social-media-list li:hover:after {
+    opacity: 1;
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+}
+
+.social-media-list li:hover a {
+    color: #000;
+}
+
+.copyright {
+    font: 200 14px 'Oswald', sans-serif;
+    color: #555;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+hr {
+    border-color: rgba(255, 255, 255, .8);
+}
+
+
+/* Begin Media Queries*/
+
+@media screen and (max-width: 760px) {
+    .direct-contact-container,
+    .form-horizontal {
+        float: none;
+        margin: 10px auto;
+    }
+    .direct-contact-container {
+        margin-top: 60px;
+        max-width: 300px;
+    }
+    .social-media-list li {
+        height: 60px;
+        width: 60px;
+        line-height: 60px;
+    }
+    .social-media-list li:after {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+}
+
+@media screen and (max-width: 569px) {
+    .direct-contact-container,
+    .form-wrapper {
+        float: none;
+        margin: 0 auto;
+    }
+    .form-control,
+    textarea {
+        width: 340px;
+        margin: 0 auto;
+        margin-bottom: 11px !important;
+    }
+    .send-button {
+        margin: 15px auto;
+        width: 370px;
+        display: block;
+    }
+    .name,
+    .email,
+    textarea {
+        width: 280px;
+    }
+    .direct-contact-container {
+        margin-top: 60px;
+        max-width: 280px;
+    }
+    .social-media-list {
+        left: 0;
+    }
+    .social-media-list li {
+        height: 55px;
+        width: 55px;
+        line-height: 55px;
+        font-size: 2rem;
+    }
+    .social-media-list li:after {
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .send-button {
+        width: 99%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contact-wrapper {
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .form-control,
+    textarea {
+        width: 305px;
+    }
+    .send-button {
+        width: 340px;
+    }
+}

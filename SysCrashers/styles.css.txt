@@ -1,0 +1,197 @@
+/* -----------------------------------html element------------------------------ */
+h1 {
+  font-size: 3.3rem;
+  color: #ffffff
+}
+h2 {
+  font-size: 2.1rem;
+  color: #ffffff;
+}
+h3 {
+  font-size: 1.9rem;
+  color: #3c3d47;
+  font-weight: bold;
+}
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: #f0ece2;
+  border-width: 7px;
+  width: 110px;
+}
+p {
+font-family: "Signika", sans-serif;
+color: #b0eacd;
+margin-bottom: 0px;
+}
+
+/* ---------------------------------------------------------------------------- */
+.nav-link{
+  color: #dcd6f7;
+}
+.navbar-brand {
+  color: #dcd6f7;
+}
+.navbar {
+   padding-bottom: 1%;
+}
+
+/* ---------------------------------------container-fluid------------------------- */
+.container-fluid {
+    height: 690px;
+    padding: 11% 5%;
+    background-image: url("Mockups/Logo-2-M-2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    line-height: 1.3;
+}
+.download {
+    margin-top: 6%;
+    margin-right: 3.5%;
+  font-size: 1.6rem;
+    width: 13rem;
+    display: inline-block;
+    height: 3.5rem;
+}
+/* -----------------------------------features---------------------------------- */
+#features {
+  background: #ffffff;
+  line-height: 2;
+  /* height: 670px; */
+  text-align: center;
+
+}
+#features-head {
+  color: #27496d;
+  padding-top: 2rem;
+}
+#features-pragraph {
+  padding-top: 10px;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  font-size: 1.1rem;
+  color: black;
+  font-weight: inherit;
+}
+.btn-md {
+    border-width: medium;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: .6rem 1.2rem;
+    margin: 1rem;
+    color: white;
+   /* background-color: #4299ff;
+    border-color: #4299ff; */
+    width: 20rem;
+  }
+
+/* ----------------fuck----------------------------- */
+#testimonials {
+  background-image: url("Mockups/Logo-3-M-3.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  height: 35rem;
+  color: #e3f6f5;
+  /* font-family: "Roboto"; */
+  font-size: 1.1rem;
+}
+
+.carousel-item {
+  padding: 4% 15%;
+}
+.shit{
+background: rgba(0,0,0,0.8) ;
+  height: 35rem;
+}
+.ourservice {
+  padding-top: 2rem;
+}
+
+
+.skill-row {
+  width: 50%;
+  /* margin: 100px auto 100px auto; */
+  /* text-align: left; */
+  line-height: 2;
+}
+.fa-network-wired {
+  width: 30%;
+  /* float: left; */
+  /* margin-right: 30px; */
+    color: blue;
+}
+.fa-user-friends {
+  width: 25%;
+  /* float: right; */
+  /* margin-left: 30px; */
+    color: blue;
+}
+.fa-bug {
+  width: 30%;
+  /* float: left; */
+  /* margin-right: 30px; */
+  color: blue;
+}
+.fas {
+      color: blue;
+}
+
+/* -------------------------------------------about us---------------------------- */
+.information {
+  text-align: center;
+  background-color: #ffffff;
+}
+.about {
+  color: black;
+  padding-top: 10px;
+  font-weight: 600;
+}
+.aboutText {
+  line-height: 1.6;
+  padding: 10px 7rem 0rem 7rem;
+  font-size: 1.1rem;
+  color: black;
+  font-weight: 400;
+}
+.theEnd {
+background-color: #40474e;
+text-align: center;
+
+}
+
+footer a {
+    color: #fff;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#lastHR {
+  border-style: none;
+  border-top-style:ridge;
+  border-color: #f2f4fb;
+  border-width: 4px;
+  width: 100%;
+}
+.links {
+  padding-right: 6px;
+}
+.Copyright {
+    padding-bottom: 35px;
+}
+.theEndText {
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: black;
+  font-weight: 400;
+  padding: 10px 10rem 0rem 10rem;
+  text-align: center;
+}
